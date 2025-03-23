@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fe03461b10e1b232802ddd2b1ad792e, type: 3}
+  m_Name: puzzles_242
+  m_EditorClassIdentifier:
+  puzzles:
+  - id: 992375613
+    fen: 1r3rk1/3n1ppp/4pn2/p7/1b2N3/1P3N2/PB1PPP1P/2KR2R1 b - -
+    moves: 2d1c06363e3f363e3f3e03061c260626
+    rating: 2428
+    themes: 72620892018049056
+    pop: 93
+    numPlays: 6553
+  - id: 203692125
+    fen: 3r1k2/8/8/8/7r/6R1/R5K1/8 b - -
+    moves: 3d35080d352c16142c231413
+    rating: 2427
+    themes: 281475516207104
+    pop: 93
+    numPlays: 5352
+  - id: 178942737
+    fen: 5r1k/pQp3pp/8/8/3R4/P1P2P2/1P2rRPP/2q3K1 w - -
+    moves: 0d0502140607140d050d0c040d050405
+    rating: 2422
+    themes: 72620617006317632
+    pop: 93
+    numPlays: 6474
+  - id: 76155144
+    fen: 5rk1/3n1pp1/B6p/2p1n3/N2p4/Pr1P1P2/1P3PKP/1R3R2 w - -
+    moves: 151d3d3818223322
+    rating: 2422
+    themes: 1126174784749570
+    pop: 93
+    numPlays: 5115
+  - id: 1028943060
+    fen: 6k1/5pp1/2Q4p/4Bb2/8/1r3P2/3R3K/1q6 b - -
+    moves: 01050b3b3e373b3f373f2a2f3f3e2f36
+    rating: 2424
+    themes: 72625015052845088
+    pop: 93
+    numPlays: 5187
+  - id: 760027852
+    fen: 6r1/2pq4/5p2/1p1kpN2/1PP5/3P3Q/5P1P/5K2 b - -
+    moves: 211a2514232b141a2b341737342c373e
+    rating: 2427
+    themes: 72057594042667008
+    pop: 93
+    numPlays: 5198
+  - id: 804757664
+    fen: r1bq1r2/3nb1pk/p1n1pp2/1p1pP1N1/2pP3P/P1P5/1P1NQPP1/R1B1K2R b KQ -
+    moves: 2d261f26373e073f3e3f0c273f3e262e332d242d3d2d27373e3d373f
+    rating: 2421
+    themes: 72058835283509280
+    pop: 93
+    numPlays: 5003
+  - id: 387342135
+    fen: r1br2k1/pp3pb1/2p3pp/8/8/1BP1BP1P/P1P2P1K/R5R1 b - -
+    moves: 3612062e3e3d14223d3c2e3e3c330003
+    rating: 2427
+    themes: 74314066910253056
+    pop: 93
+    numPlays: 5718
+  - id: 183267862
+    fen: r2qk1nr/pp3ppp/2pbp3/3p4/Q1Pn4/3B1P2/PP3PPP/RNB2RK1 w kq -
+    moves: 1a232b0f060f3b1f
+    rating: 2426
+    themes: 1689949506113568
+    pop: 93
+    numPlays: 5146
+  - id: 203672396
+    fen: r3r3/4kp2/1pp1b3/6Q1/3R4/4N3/2P2P1K/q7 b - -
+    moves: 352d14252c252636342c36332c240d1d
+    rating: 2422
+    themes: 72620891883700224
+    pop: 96
+    numPlays: 5444
+  - id: 537046648
+    fen: r4bnr/pP2kppp/8/4pb2/Q1Pq4/N2n1BP1/PP1PKP1P/R1B3NR w - -
+    moves: 31381b0d0c03130902090d05
+    rating: 2423
+    themes: 314069483520
+    pop: 94
+    numPlays: 5162

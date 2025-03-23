@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fe03461b10e1b232802ddd2b1ad792e, type: 3}
+  m_Name: puzzles_246
+  m_EditorClassIdentifier:
+  puzzles:
+  - id: 703181243
+    fen: 1r4k1/5pp1/6bp/p2p4/3B1Q2/3q3P/PP3PP1/4R1K1 b - -
+    moves: 3919043c3e373c3f373f1d2f3f3e2f36
+    rating: 2469
+    themes: 72625015052845088
+    pop: 93
+    numPlays: 5961
+  - id: 146317040
+    fen: 3Q4/8/4p1pk/1p5p/2bP3R/2P2r1P/2q3PK/8 b - -
+    moves: 150d3b3f2f261f1e271e171f261d3f24
+    rating: 2463
+    themes: 72620617006317568
+    pop: 94
+    numPlays: 6030
+  - id: 764500430
+    fen: 5r1r/1b3Rk1/p3p1P1/1pp1P2p/3P3Q/2q5/P1P1K2P/8 b - -
+    moves: 363e353d3e3d1f3b3d363b2d362f2e362f37363f
+    rating: 2461
+    themes: 72066531867525153
+    pop: 93
+    numPlays: 6470
+  - id: 579228047
+    fen: 8/pk4p1/7p/2QpPnK1/3Pq3/8/P4PPP/7R w - -
+    moves: 262725160f161c25271f25261f172627
+    rating: 2460
+    themes: 72620617006319616
+    pop: 93
+    numPlays: 6414
+  - id: 383951395
+    fen: Q1kr1r2/1p4np/1Pbp2p1/3P4/3p2P1/P2B1P1q/8/2R2RK1 b - -
+    moves: 3a3338312a310232333c0504362c042c
+    rating: 2461
+    themes: 72620891883700224
+    pop: 93
+    numPlays: 5322
+  - id: 455346896
+    fen: r2n4/1p1RRbk1/8/2p2pNN/p6K/1q6/7P/8 b - -
+    moves: 363e343c353c272d3e3f3337
+    rating: 2466
+    themes: 563264025001992
+    pop: 96
+    numPlays: 5336
+  - id: 261441538
+    fen: r3r1k1/pp1nqppp/2p2n2/2bp4/8/1P1P1bP1/PB1NPPBP/2RQR1K1 w - -
+    moves: 0b15220d060d2d1e0d051e1405061403
+    rating: 2462
+    themes: 72620818873450530
+    pop: 93
+    numPlays: 5207
+  - id: 607116359
+    fen: r5k1/8/P4p1p/8/3pK3/7P/2p3P1/R7 w - -
+    moves: 1c1b383b1b123b03120a0300
+    rating: 2463
+    themes: 281475514109952
+    pop: 93
+    numPlays: 5331

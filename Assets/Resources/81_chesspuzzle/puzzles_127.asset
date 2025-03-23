@@ -1,0 +1,715 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fe03461b10e1b232802ddd2b1ad792e, type: 3}
+  m_Name: puzzles_127
+  m_EditorClassIdentifier:
+  puzzles:
+  - id: 492276535
+    fen: 1n4k1/4p2p/3qPr1P/p1rP4/2pQ2p1/2B2p2/1PP3P1/3R1R1K w - -
+    moves: 0e152d2f07062b0f
+    rating: 1274
+    themes: 1126196259586048
+    pop: 98
+    numPlays: 7426
+  - id: 232029596
+    fen: 1q4k1/4Qppp/1n2P3/3pP3/3r4/8/6PP/5RK1 b - -
+    moves: 352c34353e3f353d393d053d
+    rating: 1273
+    themes: 39192100928
+    pop: 98
+    numPlays: 6138
+  - id: 997092297
+    fen: 1r1qr1k1/Q4ppp/2pp1n2/6N1/4P3/P1B1K2P/5PP1/5R2 b - -
+    moves: 2d1c30353e3f3536
+    rating: 1270
+    themes: 1126196259586048
+    pop: 98
+    numPlays: 7327
+  - id: 333849045
+    fen: 1r2kb1r/p1p2ppp/3qpn2/8/2p5/4P1P1/PP1N1PKP/R1BQ1R2 w k -
+    moves: 0b1a2b2a03152a1a
+    rating: 1274
+    themes: 1126174788947968
+    pop: 99
+    numPlays: 8735
+  - id: 932113300
+    fen: 1r3r2/pppb1pk1/4p3/3n2NQ/3n4/2q3P1/2P2PBP/1R2R1K1 b - -
+    moves: 1b252737362d261c2d341c12
+    rating: 1274
+    themes: 275418976256
+    pop: 99
+    numPlays: 6077
+  - id: 400901928
+    fen: 1r4k1/1q3pp1/QP2p2p/8/8/7P/5PP1/1R4K1 w - -
+    moves: 2830313029303901060f0100
+    rating: 1270
+    themes: 537432064
+    pop: 99
+    numPlays: 8465
+  - id: 977871789
+    fen: 1r5k/7p/3QN1p1/3n4/b2q4/3p4/5PPP/5RK1 b - -
+    moves: 1b292b24232d242d3f3e2d36
+    rating: 1271
+    themes: 314073677824
+    pop: 98
+    numPlays: 15157
+  - id: 961451560
+    fen: 2k3r1/1Np5/p3p2p/3q4/8/1R2Q2P/PP4P1/7K w - -
+    moves: 1430230e
+    rating: 1273
+    themes: 562641240064
+    pop: 98
+    numPlays: 7212
+  - id: 926297742
+    fen: 2k4r/pp5p/4p1p1/q2p1p2/1nPP1b2/3B1P1P/PPQN1PR1/1K1R4 w - -
+    moves: 0a1220080102080013011908020a0812
+    rating: 1271
+    themes: 72057868920033280
+    pop: 99
+    numPlays: 8471
+  - id: 312884647
+    fen: 2k4r/ppp1bpp1/3r2p1/4q3/3pP3/5BPP/PPPQ1P2/2KR3R w - -
+    moves: 0b1d34261d262426
+    rating: 1273
+    themes: 1130573905006592
+    pop: 98
+    numPlays: 6546
+  - id: 809009306
+    fen: 2k5/1pp3pp/8/p3rb2/1nB5/N1K4P/PP4P1/5R2 b - -
+    moves: 322a052524251a2c3a322c25
+    rating: 1278
+    themes: 562950495010850
+    pop: 98
+    numPlays: 5090
+  - id: 806796848
+    fen: 2kr2nQ/1pp2p2/p1p4p/4P3/2b5/2N2N2/PPq2PPP/R3K2R w KQ -
+    moves: 00033b0312030a0c
+    rating: 1276
+    themes: 1126196259586048
+    pop: 98
+    numPlays: 8692
+  - id: 392563278
+    fen: 2kr2r1/pp4PR/2B1p3/q7/5P2/8/P1Q1K3/b7 b - -
+    moves: 20282a213a392128
+    rating: 1272
+    themes: 577586927088209920
+    pop: 98
+    numPlays: 14234
+  - id: 80194146
+    fen: 2r1r3/p4pkp/6p1/2Nn4/4p3/1P5P/P4PP1/2R1RK2 w - -
+    moves: 221c3a0204023c1c
+    rating: 1275
+    themes: 1125899907366914
+    pop: 98
+    numPlays: 5475
+  - id: 1016370220
+    fen: 2rqkb1r/1p3ppp/p1npb3/1N2p3/4P3/3Q4/PPPB1PPP/R3KB1R w KQk -
+    moves: 21122a191316190a
+    rating: 1276
+    themes: 1126999418474496
+    pop: 98
+    numPlays: 5269
+  - id: 879059119
+    fen: 2rr4/3nkp2/1p2p1p1/pP4Np/1b1P1B2/1P5P/4KP2/2R3R1 b - -
+    moves: 192b1d2b342b26352b34353b
+    rating: 1276
+    themes: 275418976288
+    pop: 98
+    numPlays: 9776
+  - id: 702779149
+    fen: 3k4/6Q1/P1p5/2K5/3P3P/8/8/5q2 w - -
+    moves: 28300521222b2123
+    rating: 1279
+    themes: 1143513568247808
+    pop: 98
+    numPlays: 7503
+  - id: 817743588
+    fen: 3k4/ppr2p1p/2qp1Q2/8/5P2/7P/PP3P2/K3R3 b - -
+    moves: 3b3a2d3f3a333f3c
+    rating: 1272
+    themes: 1125921382203392
+    pop: 98
+    numPlays: 16333
+  - id: 948590242
+    fen: 3n1r2/6pk/7p/8/P7/4Q2P/1PP3PK/5r2 b - -
+    moves: 3b351413373e1305
+    rating: 1279
+    themes: 1125899911565312
+    pop: 98
+    numPlays: 7720
+  - id: 349682999
+    fen: 3qr2k/6p1/1ppB1p2/1b3R1p/1Q1P2N1/7P/1P4PK/1r6 b - -
+    moves: 271e25273f3e1911211a111a3c2c1a2c
+    rating: 1279
+    themes: 72057941930278912
+    pop: 98
+    numPlays: 10662
+  - id: 446544876
+    fen: 3r1k2/5pp1/2pr3p/1p3q2/1P1P2N1/5R1P/B4PP1/3R2K1 b - -
+    moves: 252615353d3e35253e3f2526
+    rating: 1273
+    themes: 275414810626
+    pop: 100
+    numPlays: 7826
+  - id: 6781859
+    fen: 3r1r1k/p2Q1Np1/bp2p3/3q4/8/5PR1/PP4K1/8 b - -
+    moves: 3f3e352f3e3f3336
+    rating: 1272
+    themes: 1130594306129920
+    pop: 98
+    numPlays: 5253
+  - id: 701183489
+    fen: 3r2k1/p4p2/1p1q2p1/2n4r/3N2P1/2P1RQK1/PP6/4R3 w - -
+    moves: 151d271716172b1d
+    rating: 1277
+    themes: 1126174784770048
+    pop: 98
+    numPlays: 9882
+  - id: 68738091
+    fen: 3r2k1/ppp2pp1/2n2q1p/2bN4/8/2PB4/PPQ2PPP/4R1K1 b - -
+    moves: 3b23043c223d13373e3f3c3d
+    rating: 1276
+    themes: 314203717632
+    pop: 100
+    numPlays: 7462
+  - id: 575876458
+    fen: 3rr3/1p4kp/p1p3p1/4pp2/1P1P1P2/RbN1K3/1P1R2PP/8 w - -
+    moves: 1011241b14151b120b3b3c3b
+    rating: 1272
+    themes: 541720578
+    pop: 98
+    numPlays: 6650
+  - id: 890916348
+    fen: 3rr3/2kb2pp/B1n2p2/3P4/p7/4KN2/5PPP/1R5R w - -
+    moves: 1413332513122501
+    rating: 1274
+    themes: 3382373718691840
+    pop: 98
+    numPlays: 5878
+  - id: 464971589
+    fen: 4k3/1p2pp2/p2pb3/8/q3P3/3QB2P/P1P3r1/1rK3RR w - -
+    moves: 0201180801020800
+    rating: 1270
+    themes: 1196565003763712
+    pop: 98
+    numPlays: 6438
+  - id: 276391135
+    fen: 4r2k/3N2p1/5b1p/p7/2n5/5P1P/P5P1/1R5K b - -
+    moves: 3c2c01393f37333d373e3d2c
+    rating: 1279
+    themes: 541626368
+    pop: 98
+    numPlays: 10977
+  - id: 858156189
+    fen: 4r3/5k1p/2p2pp1/2N5/1P1P1P2/5b2/5P1P/2R2K2 w - -
+    moves: 0204150e050e3c04
+    rating: 1270
+    themes: 1125900981129216
+    pop: 98
+    numPlays: 6861
+  - id: 1019651910
+    fen: 4r3/5p2/5k2/8/P5R1/6p1/5bP1/R6K w - -
+    moves: 00053c3f1e1f3f1f
+    rating: 1279
+    themes: 1125921382203392
+    pop: 98
+    numPlays: 8246
+  - id: 561460570
+    fen: 4rr2/p2q2kp/1p4p1/2p1P1Q1/3pN2n/3B1K1R/PP5P/6R1 w - -
+    moves: 15163d15161f3317
+    rating: 1275
+    themes: 1126196263780352
+    pop: 98
+    numPlays: 14259
+  - id: 195081062
+    fen: 5bk1/1p4rp/3p4/3Pp3/1q2PP2/5P2/P3Q3/R4K1R w - -
+    moves: 070636060506191b060e1b00
+    rating: 1272
+    themes: 543686690
+    pop: 98
+    numPlays: 8005
+  - id: 749630166
+    fen: 5k2/3R4/7p/K7/8/1p4P1/7P/4r3 w - -
+    moves: 3331040020291109
+    rating: 1271
+    themes: 1407374884081665
+    pop: 98
+    numPlays: 10304
+  - id: 37024463
+    fen: 5kr1/pp5Q/3q1p2/2pPn3/7P/2P5/P1P1N3/3RK3 w - -
+    moves: 0c1d2415040c2b1d373e3d3e
+    rating: 1278
+    themes: 537432064
+    pop: 98
+    numPlays: 5164
+  - id: 1030754081
+    fen: 5n1k/R3Q1R1/3r1rp1/2p4p/1p1p1q1N/8/PPP2PPK/8 w - -
+    moves: 0f171d1e170f1e1f0f061f0d
+    rating: 1273
+    themes: 275416895488
+    pop: 98
+    numPlays: 12742
+  - id: 549387221
+    fen: 5Nk1/6p1/6p1/3P4/1pP2pP1/5QnP/2B1R1K1/2q5 w - -
+    moves: 3d2c02070e0d0705
+    rating: 1277
+    themes: 1125921382203392
+    pop: 98
+    numPlays: 16383
+  - id: 329613132
+    fen: 5r1k/1p5p/1q1p4/4p1Q1/3pP3/1B1P1r2/P1P2P2/2K3R1 b - -
+    moves: 2932263e3d3e063e
+    rating: 1278
+    themes: 1688871335624704
+    pop: 98
+    numPlays: 14058
+  - id: 822264868
+    fen: 5r1k/1Q4p1/3bP2p/3B4/P1P5/6Pq/7P/R5K1 w - -
+    moves: 18202b2206073d0500051705
+    rating: 1270
+    themes: 39192100864
+    pop: 99
+    numPlays: 5751
+  - id: 657590922
+    fen: 5r1k/5qp1/4p1Rp/p4p1Q/3p4/1P1P4/P1r3PP/4R1K1 b - -
+    moves: 3d3c2e2f362f2735
+    rating: 1271
+    themes: 1125899907403776
+    pop: 98
+    numPlays: 12933
+  - id: 708545382
+    fen: 5r1k/6pp/p4q2/4p3/P1B1p2P/2Q1P2b/6NP/1RB3K1 w - -
+    moves: 02102d0d06070d0e
+    rating: 1276
+    themes: 1126196259586048
+    pop: 98
+    numPlays: 9763
+  - id: 476625116
+    fen: 5rk1/1bq3r1/pp1pQ3/2p1pN2/2P1P3/7P/P4PB1/4RK2 b - -
+    moves: 3235252f3e372f35
+    rating: 1276
+    themes: 1126174788947968
+    pop: 98
+    numPlays: 8356
+  - id: 640064997
+    fen: 5rk1/1pq3bp/p1pp3N/3pn1Q1/8/2N5/PPP3PP/5RK1 b - -
+    moves: 3e3f053d363d263e
+    rating: 1273
+    themes: 1126196393803776
+    pop: 98
+    numPlays: 13028
+  - id: 402873930
+    fen: 5rk1/pp2nqbp/3p4/1P2P1p1/P1PP4/B2Q2Pb/6rP/3RR1KB w - -
+    moves: 070e350d0607170e
+    rating: 1274
+    themes: 1126196393803776
+    pop: 98
+    numPlays: 7257
+  - id: 624194981
+    fen: 6k1/3N1pp1/2N3np/p7/1p6/1P4PP/P5K1/4b3 b - -
+    moves: 2e3d2a343e3f333d
+    rating: 1277
+    themes: 1125899907387392
+    pop: 98
+    numPlays: 7409
+  - id: 39037084
+    fen: 6k1/3P1p1p/Q5p1/4p3/3rq3/7P/5PP1/R5K1 b - -
+    moves: 1b33283a3e363a33
+    rating: 1273
+    themes: 1125899911565312
+    pop: 98
+    numPlays: 6597
+  - id: 187861999
+    fen: 6k1/5pp1/1p2p2p/3pP3/1P1N1P2/PR1KP1P1/5nrP/8 w - -
+    moves: 13120d1c12130e0b
+    rating: 1274
+    themes: 1125921398980608
+    pop: 98
+    numPlays: 7809
+  - id: 272573245
+    fen: 6k1/5pp1/3Q3p/P3pq2/6P1/5P1K/7N/1r6 b - -
+    moves: 251d2b3b3e373b13241c1301
+    rating: 1276
+    themes: 541593600
+    pop: 98
+    numPlays: 14458
+  - id: 921892624
+    fen: 6k1/BR3pp1/p6p/8/P7/5PP1/r5rP/3K3R w - -
+    moves: 0704080031010001
+    rating: 1274
+    themes: 1125921382203392
+    pop: 98
+    numPlays: 5479
+  - id: 522257732
+    fen: 6r1/1pp2p2/pn2k2p/5p1N/2P1pP2/PP4P1/7P/2KR4 b - -
+    moves: 293303332c33272d332c2d3e
+    rating: 1274
+    themes: 562950495014944
+    pop: 98
+    numPlays: 5721
+  - id: 147015379
+    fen: 7k/6p1/7p/8/8/pQP4P/Pq2NK2/8 w - -
+    moves: 121a091108111008
+    rating: 1273
+    themes: 1125899907371009
+    pop: 98
+    numPlays: 7227
+  - id: 391880019
+    fen: 7k/pp4pp/2pN4/3bP3/3n2P1/1P3r1P/P4P2/2R1R1K1 w - -
+    moves: 041415140d141b0c060d0c02
+    rating: 1277
+    themes: 541589506
+    pop: 98
+    numPlays: 14457
+  - id: 768704722
+    fen: 7r/2Q2ppp/p1R1pn2/1p1pk3/8/6P1/PP2qP1P/6K1 b - -
+    moves: 241c321d1c132a12
+    rating: 1279
+    themes: 1125921382203392
+    pop: 98
+    numPlays: 8827
+  - id: 39425866
+    fen: 7r/kp2qp2/p1p1nn2/3pQ1P1/3P4/4PP2/PP1B4/1K1R4 b - -
+    moves: 3f27262d27242d34
+    rating: 1270
+    themes: 1126174784753665
+    pop: 98
+    numPlays: 6234
+  - id: 931827533
+    fen: 8/1Q2R1pk/p3p1q1/3p4/P2Pp3/1P2P2p/5PrP/5R1K w - -
+    moves: 31330e0f070f2e0e
+    rating: 1271
+    themes: 1688871335624736
+    pop: 98
+    numPlays: 7079
+  - id: 425578907
+    fen: 8/5ppk/7p/3R1P2/2q1KQP1/7P/8/8 w - -
+    moves: 1c24352d242b1a1d
+    rating: 1274
+    themes: 1125900981129216
+    pop: 99
+    numPlays: 5036
+  - id: 464861582
+    fen: 8/6K1/pB5P/P7/1k6/2pb4/8/8 w - -
+    moves: 362d120a29141920
+    rating: 1270
+    themes: 1125900981112961
+    pop: 98
+    numPlays: 9581
+  - id: 265539425
+    fen: 8/6R1/5P1k/1p2Pn1p/1p1K2p1/1P6/8/8 w - -
+    moves: 1b1c25362d35362c
+    rating: 1278
+    themes: 1125899907379200
+    pop: 98
+    numPlays: 9315
+  - id: 855983029
+    fen: 8/8/4P3/5kp1/3b1r2/8/P3R1K1/8 b - -
+    moves: 1d1c0c1c251c2c34
+    rating: 1279
+    themes: 1125899907371009
+    pop: 98
+    numPlays: 5610
+  - id: 556345603
+    fen: 8/8/4p3/p2pPk2/P1pP2p1/2P3K1/1P6/8 b - -
+    moves: 251c161e1c131e26130a262d0a092d2c09122c231213242c1a122c34120a343c
+    rating: 1273
+    themes: 72068589154734081
+    pop: 98
+    numPlays: 10301
+  - id: 161078757
+    fen: 8/8/Rnk1N3/2N2p2/1p1P4/1P6/PKP2n1r/8 w - -
+    moves: 22180d1309010f07
+    rating: 1271
+    themes: 1130319428714496
+    pop: 98
+    numPlays: 5945
+  - id: 276957429
+    fen: 8/p1r4p/2N2k2/6p1/4K3/1P5P/P4p2/3R4 w - -
+    moves: 2a1b32341c153404150d0403
+    rating: 1275
+    themes: 537399296
+    pop: 98
+    numPlays: 6867
+  - id: 973353910
+    fen: 8/p7/2p1p2p/3kP3/P2P2p1/1PR1K1P1/6P1/4r3 w - -
+    moves: 141d041c
+    rating: 1272
+    themes: 282037617950720
+    pop: 98
+    numPlays: 11237
+  - id: 196700207
+    fen: 8/pkp1q1rp/1p6/5p2/4p3/4QPP1/PPP4P/2K1R3 b - -
+    moves: 1c151415322a0434
+    rating: 1276
+    themes: 1125899907403776
+    pop: 98
+    numPlays: 18915
+  - id: 529476580
+    fen: b4rk1/2p2ppp/3b4/1Q1pR3/3P2q1/N1P5/1P3PPP/2B3K1 w - -
+    moves: 24261e0321052b0f060f0305
+    rating: 1279
+    themes: 276492734464
+    pop: 98
+    numPlays: 10583
+  - id: 925998163
+    fen: Q7/2kn1p2/1p1N4/3Pp3/3bq3/7p/P4P1K/6R1 b - -
+    moves: 322b382a2b34232b342c2a1c
+    rating: 1277
+    themes: 537432064
+    pop: 98
+    numPlays: 7010
+  - id: 642303093
+    fen: Q7/5pk1/3b3p/4q1p1/3p1p2/3P3P/PPPBrPP1/3R2K1 w - -
+    moves: 38150c0b030b2404060f040b
+    rating: 1277
+    themes: 562950495016992
+    pop: 98
+    numPlays: 5179
+  - id: 645905147
+    fen: r1b1k2B/pppq1p1p/3b4/3n4/2Q5/5N2/P4PPP/R4RK1 w q -
+    moves: 1a232b0f150f332305043a2c
+    rating: 1279
+    themes: 275414818818
+    pop: 98
+    numPlays: 15842
+  - id: 669365222
+    fen: r1b1k2r/pp1n1ppp/1q6/3PP3/2Q1PPn1/2N1bN2/PP1B2PP/R2K1B1R w kq -
+    moves: 1a131e0d030a0d13
+    rating: 1271
+    themes: 1126999422664706
+    pop: 98
+    numPlays: 11860
+  - id: 907880615
+    fen: r1b1k2r/pppp1ppp/1bn1q3/4P3/2Q1P3/B1P2N2/P2N1PPP/3R1RK1 b kq -
+    moves: 2a241a2c332c1524
+    rating: 1277
+    themes: 1126174851858434
+    pop: 98
+    numPlays: 5669
+  - id: 1008844361
+    fen: r1b1q1k1/pp3ppp/2n5/2pQ4/4nB2/1B3N2/PP3PPP/R5K1 b - -
+    moves: 3a2c231c2c111c3c383c0811
+    rating: 1271
+    themes: 275423166466
+    pop: 99
+    numPlays: 8767
+  - id: 309921703
+    fen: r1b2rk1/1p3ppp/p3p3/2b5/P1B5/1QP2qP1/1P3P1P/R1B2RK1 w - -
+    moves: 1103220d050d1503
+    rating: 1275
+    themes: 1126174918987776
+    pop: 98
+    numPlays: 9104
+  - id: 876722697
+    fen: r1b2rk1/p1p2ppn/2Qb1q1p/8/2B5/8/PPP2PPP/RNB2RK1 w - -
+    moves: 01122b0f060f2d2a
+    rating: 1279
+    themes: 1126999418507264
+    pop: 98
+    numPlays: 10418
+  - id: 120258615
+    fen: r1b2rk1/pp4pp/2n1p3/3pP1NQ/3q4/1P6/2P3PP/R4R1K b - -
+    moves: 372f053d3e3d2735
+    rating: 1273
+    themes: 1126196393803808
+    pop: 98
+    numPlays: 14478
+  - id: 465941827
+    fen: r1bq1rk1/p1p2p1n/3p4/4p1p1/p3P3/P1P3N1/1PPQ1PPP/2KR3R b - -
+    moves: 352d0b233e3f2338
+    rating: 1273
+    themes: 1126174788943874
+    pop: 99
+    numPlays: 9584
+  - id: 249711396
+    fen: r1bq2k1/ppp4p/3p1n1Q/7N/4rP2/8/PPP3P1/R1B2K1R b - -
+    moves: 2d1e2f36
+    rating: 1273
+    themes: 837518622720
+    pop: 98
+    numPlays: 5608
+  - id: 200685313
+    fen: r1bq3k/p3bBp1/6QB/2pnp3/3n3P/P7/1P3PP1/R3K2R b KQ -
+    moves: 342d2f362d362e27362f272f
+    rating: 1274
+    themes: 563264157122560
+    pop: 98
+    numPlays: 13436
+  - id: 325200265
+    fen: r1bqrbk1/1p2n3/p1p1pnp1/3p1p1p/2PP1P2/BP2PN1B/P1Q2NPP/2R1K2R w K -
+    moves: 15243b200a122010
+    rating: 1273
+    themes: 1126174788943874
+    pop: 98
+    numPlays: 9659
+  - id: 765875963
+    fen: r1k2r2/ppp4p/1q3Bp1/4p3/Q7/8/PP3PPP/2RR2K1 b - -
+    moves: 292d18333a393332
+    rating: 1273
+    themes: 1196290126381056
+    pop: 98
+    numPlays: 6502
+  - id: 22249902
+    fen: r1r3k1/5ppp/6q1/3P4/2N2p2/pP3Q1P/NbP2PP1/1K1R3R w - -
+    moves: 1a092e0a01000a09
+    rating: 1270
+    themes: 1196565003763712
+    pop: 98
+    numPlays: 8190
+  - id: 700765988
+    fen: r2k1r2/ppp3Q1/1q4P1/8/n3B3/2PP1P2/1b1R1P2/2K4R w - -
+    moves: 0b0929090203181236120912
+    rating: 1276
+    themes: 70644161056768
+    pop: 98
+    numPlays: 5959
+  - id: 815840874
+    fen: r2q2k1/pppb1p2/2n2n1Q/3p2N1/3P4/2bB3P/PPP2PP1/4R1K1 b - -
+    moves: 120413372d372f373e3d3735
+    rating: 1275
+    themes: 315277443072
+    pop: 98
+    numPlays: 5996
+  - id: 474573384
+    fen: r2qkbnr/ppp2ppp/4p3/2Pp1b2/1n1P4/2N1PN2/PP3PPP/R1BQKB1R w KQkq -
+    moves: 0810190a040b0a00
+    rating: 1272
+    themes: 1126999422664706
+    pop: 98
+    numPlays: 9448
+  - id: 186157597
+    fen: r2r2k1/5ppp/1QNq4/3b4/8/P6P/1P3PP1/2R1R1K1 w - -
+    moves: 02032b2a292a232a033b383b
+    rating: 1272
+    themes: 275414777858
+    pop: 98
+    numPlays: 7461
+  - id: 897643629
+    fen: r3k2r/ppp3p1/2n1pnp1/3p2B1/3P2B1/6qP/PPP5/RN1Q1R1K w kq -
+    moves: 05063f171e171617
+    rating: 1271
+    themes: 1126196393803776
+    pop: 98
+    numPlays: 12106
+  - id: 805682576
+    fen: r3q3/6pk/p2p3p/1ppP3r/8/1P2B1QP/1PP2P2/6RK b - -
+    moves: 3c33162e373e2e27
+    rating: 1272
+    themes: 1125899911565312
+    pop: 98
+    numPlays: 8377
+  - id: 87798478
+    fen: r3r1k1/1p3ppp/p1pb4/3p4/PP1P1P2/2NBPnNq/2Q4P/1R2R2K w - -
+    moves: 0a0e170e070e1504
+    rating: 1275
+    themes: 1126175992713248
+    pop: 99
+    numPlays: 6550
+  - id: 228349127
+    fen: r3r1k1/ppp2ppp/2n1qn2/2b5/6b1/1PN2N1P/PB1PBPP1/R2Q1RK1 b - -
+    moves: 1e1715262c242617
+    rating: 1270
+    themes: 1126174784749570
+    pop: 98
+    numPlays: 12688
+  - id: 542307805
+    fen: r4r1k/1p2nPpp/1p1p4/3q4/8/1Q3N2/PP3PPP/R3R1K1 w - -
+    moves: 0434231108113800
+    rating: 1272
+    themes: 1126174784749570
+    pop: 99
+    numPlays: 6839
+  - id: 409326948
+    fen: r4r1k/1pp1Q2p/1b1p1p1P/4n1p1/4P3/5B2/1q2NPP1/q4RK1 b - -
+    moves: 3d3e342d3e362d36
+    rating: 1274
+    themes: 1126196393803776
+    pop: 98
+    numPlays: 11497
+  - id: 309683047
+    fen: r4rk1/1bp2ppp/p4q2/1p1pn3/3Q4/1BNP4/PP3PPP/R1B1R1K1 w - -
+    moves: 122324150e152d1b
+    rating: 1275
+    themes: 1126174784786432
+    pop: 98
+    numPlays: 10958
+  - id: 182044537
+    fen: r4rk1/p3qppp/1p6/1Qp1p3/4n3/B1P5/P4PPP/RN1R2K1 w - -
+    moves: 010b1c12211a1203
+    rating: 1272
+    themes: 1126174788943874
+    pop: 98
+    numPlays: 5238
+  - id: 141996569
+    fen: r4rk1/ppp3bp/3p2p1/3Pp3/4N2q/8/PPPQNPPP/2KR3R w - -
+    moves: 0c16362f0b2f1f2f
+    rating: 1278
+    themes: 1130572831260674
+    pop: 98
+    numPlays: 6883
+  - id: 460536089
+    fen: r5k1/1q3p1p/4p1p1/8/2pP4/p1P1P3/Q4PPP/R5K1 b - -
+    moves: 31090809100900383e363839
+    rating: 1270
+    themes: 537432064
+    pop: 98
+    numPlays: 6614
+  - id: 458791964
+    fen: r5k1/4pp1p/nr1p2p1/3P4/5P2/2R1N3/5PPP/R5K1 b - -
+    moves: 283200383238123a3e363a3829011405
+    rating: 1276
+    themes: 72057594042646530
+    pop: 98
+    numPlays: 13018
+  - id: 975050012
+    fen: R5k1/5rb1/4Q1p1/6P1/3pP3/8/6K1/1rq5 b - -
+    moves: 3e372c17362f172f
+    rating: 1278
+    themes: 1125921382203392
+    pop: 98
+    numPlays: 5796
+  - id: 350486812
+    fen: r5kr/4q2p/2nNN1p1/3pPQ2/1p1P1P2/5R2/6PP/6K1 b - -
+    moves: 2e25151634361636
+    rating: 1272
+    themes: 1126196259586048
+    pop: 98
+    numPlays: 6309
+  - id: 624436970
+    fen: r5r1/pp1bkp1p/1q2p3/2p5/2P5/2N1nN1P/PPP3P1/1R1Q1RK1 w - -
+    moves: 030c3e0e0c0e140e
+    rating: 1277
+    themes: 1126174788943874
+    pop: 98
+    numPlays: 7220
+  - id: 662140225
+    fen: rn2r1k1/ppq4p/2pb1p2/3p4/3P2QN/P1PP3P/5PP1/R4RK1 b - -
+    moves: 32361e363e361f25362e252b
+    rating: 1272
+    themes: 275418972194
+    pop: 98
+    numPlays: 5323
+  - id: 866156588
+    fen: rn3rk1/1Rqp1pbp/3p2p1/2pP4/2B5/pQP2N2/5PPP/4R1K1 b - -
+    moves: 100831320800040038001a05
+    rating: 1278
+    themes: 275423178752
+    pop: 98
+    numPlays: 5893
+  - id: 462408209
+    fen: rn4k1/1Q3ppp/p2p2q1/4rb2/2P5/6P1/PP3PBP/R4RK1 b - -
+    moves: 251c313a243c3a3c
+    rating: 1275
+    themes: 1126196259586048
+    pop: 98
+    numPlays: 10490

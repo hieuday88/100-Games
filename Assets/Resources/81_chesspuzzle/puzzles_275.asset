@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fe03461b10e1b232802ddd2b1ad792e, type: 3}
+  m_Name: puzzles_275
+  m_EditorClassIdentifier:
+  puzzles:
+  - id: 371040683
+    fen: r2q3k/pp3r1p/5pR1/3ppQ1N/8/8/PPP5/2K4R b - -
+    moves: 372e252e35372e363736272d36370737
+    rating: 2757
+    themes: 72620617008447496
+    pop: 93
+    numPlays: 6702

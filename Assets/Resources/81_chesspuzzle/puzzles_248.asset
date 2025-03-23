@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fe03461b10e1b232802ddd2b1ad792e, type: 3}
+  m_Name: puzzles_248
+  m_EditorClassIdentifier:
+  puzzles:
+  - id: 548638988
+    fen: 2k5/p1p3p1/3b4/N1n3qp/2QP4/5rPn/PP3P1K/R4R2 w - -
+    moves: 1b22150d0f070d0f070f26160f07160f
+    rating: 2483
+    themes: 72620891883700256
+    pop: 95
+    numPlays: 5690
+  - id: 547945242
+    fen: 3r2k1/1pq2r1p/2b3p1/p2pRp2/3Q1P2/1PP5/P5PP/4R1K1 b - -
+    moves: 3b33243c353d3c3d3e3d1b2d33352d3f
+    rating: 2480
+    themes: 72057942064496672
+    pop: 93
+    numPlays: 5350
+  - id: 962185747
+    fen: 8/7p/3k1pp1/p2P4/1p2K1P1/1P6/P6P/8 w - -
+    moves: 0f172d251e252e251c252b232526231b
+    rating: 2489
+    themes: 72059793061715970
+    pop: 93
+    numPlays: 6990
+  - id: 683369654
+    fen: r4k2/5r1p/2p2P2/2bp4/5NQ1/q1N5/6KP/1R6 b - -
+    moves: 383c1d2c3c2c01392c3c393c3d3c1e3a
+    rating: 2487
+    themes: 72620891885797408
+    pop: 93
+    numPlays: 5434

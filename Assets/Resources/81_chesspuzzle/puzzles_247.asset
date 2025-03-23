@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fe03461b10e1b232802ddd2b1ad792e, type: 3}
+  m_Name: puzzles_247
+  m_EditorClassIdentifier:
+  puzzles:
+  - id: 699052197
+    fen: 2kr4/p2q1pp1/1p3bp1/1Pp5/2P1Q3/PK1p1P1P/4RBP1/8 b - -
+    moves: 130c1c383a320d16332b382a3239162b
+    rating: 2474
+    themes: 72132360831242240
+    pop: 94
+    numPlays: 5085
+  - id: 970966664
+    fen: 2r5/p1r2qpk/1p3p1p/3N1P2/3Pn1Q1/6P1/PP5R/1K5R b - -
+    moves: 35230f2f373e2f3f3e351e3635360737
+    rating: 2477
+    themes: 72620891883700256
+    pop: 94
+    numPlays: 6218
+  - id: 109285737
+    fen: 5R2/pp1k4/4p2p/3pP1b1/1P1K2P1/2P3BP/P3r3/8 w - -
+    moves: 171f0c0b1b222634
+    rating: 2475
+    themes: 1125899907371008
+    pop: 93
+    numPlays: 6172
+  - id: 524221513
+    fen: 6k1/pp4pp/2pp2p1/2P3n1/2P5/3QP1qP/PP1B1rB1/R6K w - -
+    moves: 00062615132b160e060e0d050e060506
+    rating: 2472
+    themes: 72620892020015112
+    pop: 94
+    numPlays: 8689
+  - id: 240714757
+    fen: 7R/k1K2pp1/B3b3/1P6/8/4P2p/3r4/8 b - -
+    moves: 170f3f383038283138302129
+    rating: 2478
+    themes: 562989147619360
+    pop: 94
+    numPlays: 6223
+  - id: 420393256
+    fen: k5r1/pp3p1p/3rbp1B/2R5/Pn1p1Q2/1P1q4/5PPP/5RK1 w - -
+    moves: 1d2b3e0e060e2c170e061305
+    rating: 2476
+    themes: 563264157122592
+    pop: 95
+    numPlays: 6297
+  - id: 11760084
+    fen: r1bb2rk/2q2p1p/p3pP1Q/1p1pn2B/1PnN1R2/P1P5/6PP/R1B4K b - -
+    moves: 38301d1f242e2f373f37272e372e1f2f
+    rating: 2476
+    themes: 72761629506404384
+    pop: 94
+    numPlays: 5258

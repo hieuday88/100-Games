@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fe03461b10e1b232802ddd2b1ad792e, type: 3}
+  m_Name: puzzles_245
+  m_EditorClassIdentifier:
+  puzzles:
+  - id: 131084492
+    fen: 1k1rr3/1p4pp/p1p1pq2/Q2p4/3P4/RR6/PP3PPP/6K1 b - -
+    moves: 3c3d113139311011313a20283a321131322b28102a221022
+    rating: 2459
+    themes: 72691054469988384
+    pop: 94
+    numPlays: 6038
+  - id: 252995858
+    fen: 2r5/p6p/1pr3k1/4Rbp1/3p1p2/3P3P/PPP2BP1/1K1R4 w - -
+    moves: 030b25130b132a0a08180a0d
+    rating: 2454
+    themes: 537411586
+    pop: 94
+    numPlays: 7728
+  - id: 388049496
+    fen: 3r2k1/4Rp2/p1qN2pp/8/p1b1NnPP/2Q2P2/1P6/7K b - -
+    moves: 1d23343523121c2d3e3f3537
+    rating: 2453
+    themes: 563264022904840
+    pop: 94
+    numPlays: 7992
+  - id: 571815269
+    fen: 6k1/5pp1/p2Qn3/2PN3P/1Pb4P/P4PB1/1q5K/8 w - -
+    moves: 0f171a05171e35251e250517251c091b
+    rating: 2450
+    themes: 72057667052896288
+    pop: 94
+    numPlays: 5575
+  - id: 92707677
+    fen: 6k1/p5p1/6rp/4pr2/5p1q/3PbP2/PPP1QN1P/R4R1K w - -
+    moves: 0a1a1f0f070f140d0c0d25270d1f271f
+    rating: 2452
+    themes: 72620892017917952
+    pop: 95
+    numPlays: 5003
+  - id: 1037090441
+    fen: 6k1/pb3p1p/6p1/2p1Bp2/B7/n1P1KP2/6rP/3R4 b - -
+    moves: 3e3d033b3d343b3c
+    rating: 2450
+    themes: 1125921382203392
+    pop: 95
+    numPlays: 5756
+  - id: 481050723
+    fen: 6R1/8/P3p3/1p4p1/3P2kp/1b2ppB1/1P5P/4K3 w - -
+    moves: 28301f163038150d040c111a0c140d05141c1a231c2423380f163823
+    rating: 2454
+    themes: 108095187156758529
+    pop: 93
+    numPlays: 5946
+  - id: 306774965
+    fen: 7Q/4rk2/4p1p1/p1npPpPB/P2P3P/4q1PK/8/8 b - -
+    moves: 221c272e352e3f2f2e35262e353c2f14
+    rating: 2458
+    themes: 72620543991910432
+    pop: 93
+    numPlays: 5028
+  - id: 338885783
+    fen: r6k/8/b2bQPP1/4p1P1/5q2/8/Pr5R/K6R b - -
+    moves: 090f2e363f37363e383e2c35373f35270f270727
+    rating: 2459
+    themes: 216744947995377665
+    pop: 93
+    numPlays: 7222
