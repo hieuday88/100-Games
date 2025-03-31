@@ -18,7 +18,7 @@ public class InfoFruit : MonoBehaviour
 
     private Action<InfoFruit, InfoFruit, int> onMerge;
     private Rigidbody2D rb;
-    private Collider2D collider2D;
+    private Collider2D cir;
 
     public void Init(int level, Action<InfoFruit, InfoFruit, int> onMerge, bool isFall = false)
     {
@@ -27,24 +27,24 @@ public class InfoFruit : MonoBehaviour
         this.isCollider = false;
         if (rb == null)
             rb = GetComponent<Rigidbody2D>();
-        if (collider2D == null)
-            collider2D = GetComponent<Collider2D>();
+        if (cir == null)
+            cir = GetComponent<Collider2D>();
         if (isFall)
         {
             rb.bodyType = RigidbodyType2D.Dynamic;
-            collider2D.isTrigger = false;
+            cir.isTrigger = false;
         }
         else
         {
             rb.bodyType = RigidbodyType2D.Kinematic;
-            collider2D.isTrigger = true;
+            cir.isTrigger = true;
         }
     }
 
     public void OnFall()
     {
         rb.bodyType = RigidbodyType2D.Dynamic;
-        collider2D.isTrigger = false;
+        cir.isTrigger = false;
     }
 
     void OnCollisionEnter2D(Collision2D other)
