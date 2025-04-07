@@ -19,6 +19,7 @@ public class GameOver_1 : MonoBehaviour
         if (fruits.Count >= 3 && !gameController.isOver)
         {
             gameController.gameOverPOP.SetActive(true);
+            AudioManager.Instance.PlaySFX("GameOver");
             scoreText.text = "Score: " + gameController.score.ToString();
             fruits.Clear();
             gameController.isOver = true;

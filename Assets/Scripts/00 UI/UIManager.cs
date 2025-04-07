@@ -20,9 +20,9 @@ public class UIManager : Singleton<UIManager>
 
     void Start()
     {
-        QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = 120;
         Camera.main.backgroundColor = new Color(0.2f, 0.2f, 0.2f);
+        AudioManager.Instance.PlayMusic("MainMenu");
     }
     public void Back()
     {
@@ -35,6 +35,7 @@ public class UIManager : Singleton<UIManager>
         }
         gameOverPOP.SetActive(false);
         Camera.main.backgroundColor = new Color(0.2f, 0.2f, 0.2f);
+        AudioManager.Instance.PlayMusic("MainMenu");
     }
 
     public void Restart()
@@ -82,6 +83,7 @@ public class UIManager : Singleton<UIManager>
         UIGames.SetActive(false);
         UIListGames.SetActive(true);
         Games[0].SetActive(true);
+        AudioManager.Instance.PlayMusic("MainMenu", 0);
     }
 
     public void PlayGame_2()
@@ -89,6 +91,7 @@ public class UIManager : Singleton<UIManager>
         UIGames.SetActive(false);
         UIListGames.SetActive(true);
         Games[1].SetActive(true);
+        AudioManager.Instance.PlayMusic("MainMenu", 0);
     }
 
 }

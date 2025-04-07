@@ -103,6 +103,7 @@ public class GameController_1 : MonoBehaviour, IGameController
         effect.Play();
         effect.transform.SetParent(gameObject.transform);
         InfoFruit newFruit = PoolingManager.Spawn(modelFruit.DataFruit[level], pointSpawn, Quaternion.identity);
+        AudioManager.Instance.PlaySFX("LevelUp_Fruit");
         newFruit.transform.SetParent(poolObject);
         newFruit.Init(level, MergeFruit, true);
         score += level;

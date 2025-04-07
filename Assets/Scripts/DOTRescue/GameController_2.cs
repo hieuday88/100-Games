@@ -66,6 +66,7 @@ public class GameController_2 : MonoBehaviour, IGameController
     {
         yield return new WaitForSeconds(2f);
         UIManager.Instance.gameOverPOP.SetActive(true);
+        AudioManager.Instance.PlaySFX("GameOver");
         UIManager.Instance.overScoreText.text = "Score: " + ((int)score).ToString();
     }
     public void Restart()

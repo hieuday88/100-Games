@@ -15,6 +15,6 @@ public class ButtonScaler : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
     public void OnPointerUp(PointerEventData eventData)
     {
         transform.DOScale(scale, 0.15f).SetUpdate(true);
-        //AudioManager.Instance.PlaySFX("Button_Click");
+        AudioManager.Instance.PlaySFX("Button_Click", 0.5f);
     }
 }

@@ -13,6 +13,7 @@ public class Player_1 : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             _rotateSpeed *= -1f;
+            AudioManager.Instance.PlaySFX("Move_Ball");
         }
     }
 
