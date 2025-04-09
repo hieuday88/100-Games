@@ -94,4 +94,12 @@ public class UIManager : Singleton<UIManager>
         AudioManager.Instance.PlayMusic("MainMenu", 0);
     }
 
+    public void PlayGame_3()
+    {
+        UIGames.SetActive(false);
+        UIListGames.SetActive(true);
+        Games[2].SetActive(true);
+        AudioManager.Instance.PlayMusic("MainMenu", 0);
+    }
+
 }
