@@ -8,14 +8,21 @@ public class GameController_3 : MonoBehaviour, IGameController
     public static GameController_3 Instance { get; private set; }
 
     [SerializeField] private TileBoard board;
-    [SerializeField] private CanvasGroup gameOver;
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI hiscoreText;
+
+    private bool hasGameFinished;
 
     public int score { get; private set; } = 0;
     void OnEnable()
     {
+        UIManager.Instance.GameCurrent = gameObject;
         Camera.main.backgroundColor = new Color(0.9f, 0.7f, 0.7f);
+        if (hasGameFinished)
+        {
+            UIManager.Instance.gameOverPOP.SetActive(true);
+            UIManager.Instance.overScoreText.text = "Score: " + score.ToString();
+        }
     }
 
     private void Awake()
@@ -49,10 +56,6 @@ public class GameController_3 : MonoBehaviour, IGameController
         SetScore(0);
         hiscoreText.text = LoadHiscore().ToString();
 
-        // hide game over screen
-        gameOver.alpha = 0f;
-        gameOver.interactable = false;
-
         // update board state
         board.ClearBoard();
         board.CreateTile();
@@ -62,28 +65,10 @@ public class GameController_3 : MonoBehaviour, IGameController
 
     public void GameOver()
     {
-        board.enabled = false;
-        gameOver.interactable = true;
-
-        StartCoroutine(Fade(gameOver, 1f, 1f));
-    }
-
-    private IEnumerator Fade(CanvasGroup canvasGroup, float to, float delay = 0f)
-    {
-        yield return new WaitForSeconds(delay);
-
-        float elapsed = 0f;
-        float duration = 0.5f;
-        float from = canvasGroup.alpha;
-
-        while (elapsed < duration)
-        {
-            canvasGroup.alpha = Mathf.Lerp(from, to, elapsed / duration);
-            elapsed += Time.deltaTime;
-            yield return null;
-        }
-
-        canvasGroup.alpha = to;
+        hasGameFinished = true;
+        UIManager.Instance.gameOverPOP.SetActive(true);
+        AudioManager.Instance.PlaySFX("GameOver");
+        UIManager.Instance.overScoreText.text = "Score: " + ((int)score).ToString();
     }
 
     public void IncreaseScore(int points)
@@ -117,5 +102,7 @@ public class GameController_3 : MonoBehaviour, IGameController
     public void Restart()
     {
         NewGame();
+        UIManager.Instance.gameOverPOP.SetActive(false);
+        hasGameFinished = false;
     }
 }

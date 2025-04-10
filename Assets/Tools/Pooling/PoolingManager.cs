@@ -55,7 +55,7 @@ public static class PoolingManager
             Despawn(gameObjectArr[i]);
         return gameObjectArr;
     }
-    
+
     // Spawn ra 1 prefab
     public static GameObject Spawn(GameObject prefab, Vector3 pos, Quaternion rot)
     {
@@ -211,7 +211,7 @@ public class Pool
         {
             return;
         }
-        
+
         // Còn không thì tắt nó rồi trả nó về hàng đợi
         gameObject.SetActive(false);
         notActiveQueue.Enqueue(gameObject);

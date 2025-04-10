@@ -37,7 +37,9 @@ public class TileBoard : MonoBehaviour
 
     public void CreateTile()
     {
-        Tile tile = Instantiate(tilePrefab, grid.transform);
+        Tile tile = PoolingManager.Spawn(tilePrefab);
+        tile.transform.SetParent(grid.transform);
+        tile.transform.localScale = Vector3.one;
         tile.SetState(tileStates[0]);
         tile.Spawn(grid.GetRandomEmptyCell());
         tiles.Add(tile);

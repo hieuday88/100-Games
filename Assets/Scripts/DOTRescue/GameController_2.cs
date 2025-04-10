@@ -27,7 +27,7 @@ public class GameController_2 : MonoBehaviour, IGameController
         if (hasGameFinished)
         {
             UIManager.Instance.gameOverPOP.SetActive(true);
-            UIManager.Instance.overScoreText.text = "Score: " + score.ToString();
+            UIManager.Instance.overScoreText.text = "Score: " + ((int)score).ToString();
         }
         scoreSpeed = _levelSpeed[currentLevel];
         if (!hasGameFinished)

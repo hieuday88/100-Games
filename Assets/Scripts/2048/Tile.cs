@@ -29,7 +29,8 @@ public class Tile : MonoBehaviour
 
     public void Spawn(TileCell cell)
     {
-        if (this.cell != null) {
+        if (this.cell != null)
+        {
             this.cell.tile = null;
         }
 
@@ -41,7 +42,8 @@ public class Tile : MonoBehaviour
 
     public void MoveTo(TileCell cell)
     {
-        if (this.cell != null) {
+        if (this.cell != null)
+        {
             this.cell.tile = null;
         }
 
@@ -53,7 +55,8 @@ public class Tile : MonoBehaviour
 
     public void Merge(TileCell cell)
     {
-        if (this.cell != null) {
+        if (this.cell != null)
+        {
             this.cell.tile = null;
         }
 
@@ -79,8 +82,10 @@ public class Tile : MonoBehaviour
 
         transform.position = to;
 
-        if (merging) {
-            Destroy(gameObject);
+        if (merging)
+        {
+            PoolingManager.Despawn(this.gameObject);
+            AudioManager.Instance.PlaySFX("LevelUp_Fruit");
         }
     }
 
