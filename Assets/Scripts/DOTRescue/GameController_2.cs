@@ -65,14 +65,17 @@ public class GameController_2 : MonoBehaviour, IGameController
     private IEnumerator GameOver()
     {
         yield return new WaitForSeconds(2f);
-        UIManager.Instance.gameOverPOP.SetActive(true);
+        UIManager.Instance.GameOverIntro();
         AudioManager.Instance.PlaySFX("GameOver");
         UIManager.Instance.overScoreText.text = "Score: " + ((int)score).ToString();
     }
     public void Restart()
     {
-        UIManager.Instance.gameOverPOP.SetActive(false);
-        hasGameFinished = false;
+        if (hasGameFinished)
+        {
+            hasGameFinished = false;
+            UIManager.Instance.GameOverOutro();
+        }
         score = 0;
         currentLevel = 0;
         player.gameObject.SetActive(true);
