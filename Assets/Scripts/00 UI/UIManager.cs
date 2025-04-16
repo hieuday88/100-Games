@@ -30,6 +30,7 @@ public class UIManager : Singleton<UIManager>
     }
     public void Back()
     {
+        Camera.main.orthographicSize = 4.5f;
         Loading();
         DOVirtual.DelayedCall(0.5f, () =>
       {
@@ -156,8 +157,15 @@ public class UIManager : Singleton<UIManager>
        });
     }
 
-    IEnumerator Wait1s()
+    public void PlayGame_4()
     {
-        yield return new WaitForSecondsRealtime(1f);
+        Loading();
+        DOVirtual.DelayedCall(0.5f, () =>
+       {
+           UIGames.SetActive(false);
+           UIListGames.SetActive(true);
+           Games[3].SetActive(true);
+           AudioManager.Instance.PlayMusic("MainMenu", 0);
+       });
     }
 }

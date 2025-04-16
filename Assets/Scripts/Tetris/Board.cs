@@ -31,6 +31,7 @@ public class Board : MonoBehaviour
         }
     }
 
+
     private void Start()
     {
         SpawnPiece();
@@ -38,6 +39,10 @@ public class Board : MonoBehaviour
 
     public void SpawnPiece()
     {
+        if (GameController_4.Instance.isGameOver)
+        {
+            return;
+        }
         int random = Random.Range(0, tetrominoes.Length);
         TetrominoData data = tetrominoes[random];
 
@@ -56,8 +61,11 @@ public class Board : MonoBehaviour
     public void GameOver()
     {
         tilemap.ClearAllTiles();
-
-        // Do anything else you want on game over here..
+        GameController_4.Instance.isGameOver = true;
+        UIManager.Instance.GameOverIntro();
+        AudioManager.Instance.PlaySFX("GameOver");
+        UIManager.Instance.overScoreText.text = "Score: " + GameController_4.Instance.score.ToString();
+        GameController_4.Instance.score = 0;
     }
 
     public void Set(Piece piece)
@@ -65,7 +73,7 @@ public class Board : MonoBehaviour
         for (int i = 0; i < piece.cells.Length; i++)
         {
             Vector3Int tilePosition = piece.cells[i] + piece.position;
-            //tilemap.SetTile(tilePosition, piece.data.tile);
+            tilemap.SetTile(tilePosition, piece.data.tile);
         }
     }
 
@@ -145,7 +153,6 @@ public class Board : MonoBehaviour
     public void LineClear(int row)
     {
         RectInt bounds = Bounds;
-
         // Clear all tiles in the row
         for (int col = bounds.xMin; col < bounds.xMax; col++)
         {
@@ -166,6 +173,13 @@ public class Board : MonoBehaviour
             }
 
             row++;
+        }
+        GameController_4.Instance.score += 100;
+        GameController_4.Instance.scoreText.text = GameController_4.Instance.score.ToString();
+        if (GameController_4.Instance.score > PlayerPrefs.GetInt("BestScore_4", 0))
+        {
+            PlayerPrefs.SetInt("BestScore_1", GameController_4.Instance.score);
+            GameController_4.Instance.hiscoreText.text = GameController_4.Instance.score.ToString();
         }
     }
 

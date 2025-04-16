@@ -16,6 +16,13 @@ public class Piece : MonoBehaviour
     private float moveTime;
     private float lockTime;
 
+    Vector2 startPos;
+    bool isSwiping = false;
+
+    private bool left;
+    private bool right;
+    private bool down;
+
     public void Initialize(Board board, Vector3Int position, TetrominoData data)
     {
         this.data = data;
@@ -27,11 +34,13 @@ public class Piece : MonoBehaviour
         moveTime = Time.time + moveDelay;
         lockTime = 0f;
 
-        if (cells == null) {
+        if (cells == null)
+        {
             cells = new Vector3Int[data.cells.Length];
         }
 
-        for (int i = 0; i < cells.Length; i++) {
+        for (int i = 0; i < cells.Length; i++)
+        {
             cells[i] = (Vector3Int)data.cells[i];
         }
     }
@@ -45,25 +54,45 @@ public class Piece : MonoBehaviour
         lockTime += Time.deltaTime;
 
         // Handle rotation
-        if (Input.GetKeyDown(KeyCode.Q)) {
-            Rotate(-1);
-        } else if (Input.GetKeyDown(KeyCode.E)) {
-            Rotate(1);
+        if (Input.GetMouseButtonDown(0))
+        {
+            startPos = Input.mousePosition;
+            isSwiping = true;
         }
 
-        // Handle hard drop
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            HardDrop();
+        if (Input.GetMouseButtonUp(0) && isSwiping)
+        {
+            Vector2 endPos = Input.mousePosition;
+            Vector2 swipe = endPos - startPos;
+
+            if (swipe.magnitude > 50f)
+            {
+                if (Mathf.Abs(swipe.x) > Mathf.Abs(swipe.y))
+                {
+                    if (swipe.x > 0)
+                    {
+                        Rotate(1);
+                    }
+                    else
+                    {
+                        Rotate(-1);
+                    }
+                }
+            }
+
+            isSwiping = false;
         }
 
         // Allow the player to hold movement keys but only after a move delay
         // so it does not move too fast
-        if (Time.time > moveTime) {
+        if (Time.time > moveTime)
+        {
             HandleMoveInputs();
         }
 
         // Advance the piece to the next row every x seconds
-        if (Time.time > stepTime) {
+        if (Time.time > stepTime)
+        {
             Step();
         }
 
@@ -73,20 +102,60 @@ public class Piece : MonoBehaviour
     private void HandleMoveInputs()
     {
         // Soft drop movement
+        if (down)
+        {
+            if (Move(Vector2Int.down))
+            {
+                // Update the step time to prevent double movement
+                stepTime = Time.time + stepDelay;
+            }
+            down = false;
+        }
+
+        // Left/right movement
+        if (left)
+        {
+            Move(Vector2Int.left);
+            left = false;
+        }
+        else if (right)
+        {
+            Move(Vector2Int.right);
+            right = false;
+        }
+
+        // Soft drop movement
         if (Input.GetKey(KeyCode.S))
         {
-            if (Move(Vector2Int.down)) {
+            if (Move(Vector2Int.down))
+            {
                 // Update the step time to prevent double movement
                 stepTime = Time.time + stepDelay;
             }
         }
 
         // Left/right movement
-        if (Input.GetKey(KeyCode.A)) {
+        if (Input.GetKey(KeyCode.A))
+        {
             Move(Vector2Int.left);
-        } else if (Input.GetKey(KeyCode.D)) {
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
             Move(Vector2Int.right);
         }
+    }
+
+    public void OnLeftButtonDown()
+    {
+        left = true;
+    }
+    public void OnRightButtonDown()
+    {
+        right = true;
+    }
+    public void OnDownButtonDown()
+    {
+        down = true;
     }
 
     private void Step()
@@ -97,14 +166,16 @@ public class Piece : MonoBehaviour
         Move(Vector2Int.down);
 
         // Once the piece has been inactive for too long it becomes locked
-        if (lockTime >= lockDelay) {
+        if (lockTime >= lockDelay)
+        {
             Lock();
         }
     }
 
     private void HardDrop()
     {
-        while (Move(Vector2Int.down)) {
+        while (Move(Vector2Int.down))
+        {
             continue;
         }
 
@@ -195,7 +266,8 @@ public class Piece : MonoBehaviour
         {
             Vector2Int translation = data.wallKicks[wallKickIndex, i];
 
-            if (Move(translation)) {
+            if (Move(translation))
+            {
                 return true;
             }
         }
@@ -207,7 +279,8 @@ public class Piece : MonoBehaviour
     {
         int wallKickIndex = rotationIndex * 2;
 
-        if (rotationDirection < 0) {
+        if (rotationDirection < 0)
+        {
             wallKickIndex--;
         }
 
@@ -216,9 +289,12 @@ public class Piece : MonoBehaviour
 
     private int Wrap(int input, int min, int max)
     {
-        if (input < min) {
+        if (input < min)
+        {
             return max - (min - input) % (max - min);
-        } else {
+        }
+        else
+        {
             return min + (input - min) % (max - min);
         }
     }

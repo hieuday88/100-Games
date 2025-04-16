@@ -25,7 +25,7 @@ public abstract class Singleton<T> : MonoBehaviour where T : MonoBehaviour
         }
         else
         {
-            instance = (T) (MonoBehaviour) this;
+            instance = (T)(MonoBehaviour)this;
         }
     }
 }

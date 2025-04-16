@@ -3,7 +3,7 @@ using UnityEngine.Tilemaps;
 
 public class Ghost : MonoBehaviour
 {
-    public Tile tile;
+    public TileBase tile;
     public Board mainBoard;
     public Piece trackingPiece;
 
@@ -73,7 +73,7 @@ public class Ghost : MonoBehaviour
         for (int i = 0; i < cells.Length; i++)
         {
             Vector3Int tilePosition = cells[i] + position;
-            //tilemap.SetTile(tilePosition, tile);
+            tilemap.SetTile(tilePosition, tile);
         }
     }
 

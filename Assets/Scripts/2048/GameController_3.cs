@@ -3,10 +3,8 @@ using TMPro;
 using UnityEngine;
 
 [DefaultExecutionOrder(-1)]
-public class GameController_3 : MonoBehaviour, IGameController
+public class GameController_3 : Singleton<GameController_3>, IGameController
 {
-    public static GameController_3 Instance { get; private set; }
-
     [SerializeField] private TileBoard board;
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI hiscoreText;
@@ -22,26 +20,6 @@ public class GameController_3 : MonoBehaviour, IGameController
         {
             UIManager.Instance.gameOverPOP.SetActive(true);
             UIManager.Instance.overScoreText.text = "Score: " + score.ToString();
-        }
-    }
-
-    private void Awake()
-    {
-        if (Instance != null)
-        {
-            DestroyImmediate(gameObject);
-        }
-        else
-        {
-            Instance = this;
-        }
-    }
-
-    private void OnDestroy()
-    {
-        if (Instance == this)
-        {
-            Instance = null;
         }
     }
 
