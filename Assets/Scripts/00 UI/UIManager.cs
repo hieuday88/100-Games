@@ -26,11 +26,10 @@ public class UIManager : Singleton<UIManager>
     {
         Application.targetFrameRate = 120;
         Camera.main.backgroundColor = new Color(0.2f, 0.2f, 0.2f);
-        AudioManager.Instance.PlayMusic("MainMenu");
+        AudioManager.Instance.PlayMusic("MainMenu", 1);
     }
     public void Back()
     {
-        Camera.main.orthographicSize = 4.5f;
         Loading();
         DOVirtual.DelayedCall(0.5f, () =>
       {
@@ -43,7 +42,7 @@ public class UIManager : Singleton<UIManager>
           }
           gameOverPOP.SetActive(false);
           Camera.main.backgroundColor = new Color(0.2f, 0.2f, 0.2f);
-          AudioManager.Instance.PlayMusic("MainMenu");
+          AudioManager.Instance.PlayMusic("MainMenu", 1);
       });
     }
 
@@ -90,7 +89,7 @@ public class UIManager : Singleton<UIManager>
     void Loading()
     {
         Sequence seq = DOTween.Sequence();
-        seq.Append(loading.DOScale(20f, 0.5f).SetEase(Ease.Linear)).SetUpdate(true);
+        seq.Append(loading.DOScale(1.9f, 0.5f).SetEase(Ease.Linear)).SetUpdate(true);
         seq.Append(loading.DOScale(0f, 0.5f).SetEase(Ease.Linear)).SetUpdate(true);
     }
 

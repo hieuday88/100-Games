@@ -68,13 +68,13 @@ public class GameController_3 : Singleton<GameController_3>, IGameController
 
         if (score > hiscore)
         {
-            PlayerPrefs.SetInt("hiscore", score);
+            PlayerPrefs.SetInt("BestScore_3", score);
         }
     }
 
     private int LoadHiscore()
     {
-        return PlayerPrefs.GetInt("hiscore", 0);
+        return PlayerPrefs.GetInt("BestScore_3", 0);
     }
 
     public void Restart()

@@ -60,7 +60,6 @@ public class Board : MonoBehaviour
 
     public void GameOver()
     {
-        tilemap.ClearAllTiles();
         GameController_4.Instance.isGameOver = true;
         UIManager.Instance.GameOverIntro();
         AudioManager.Instance.PlaySFX("GameOver");
@@ -174,11 +173,12 @@ public class Board : MonoBehaviour
 
             row++;
         }
+        AudioManager.Instance.PlaySFX("LevelUp_Fruit");
         GameController_4.Instance.score += 100;
         GameController_4.Instance.scoreText.text = GameController_4.Instance.score.ToString();
         if (GameController_4.Instance.score > PlayerPrefs.GetInt("BestScore_4", 0))
         {
-            PlayerPrefs.SetInt("BestScore_1", GameController_4.Instance.score);
+            PlayerPrefs.SetInt("BestScore_4", GameController_4.Instance.score);
             GameController_4.Instance.hiscoreText.text = GameController_4.Instance.score.ToString();
         }
     }

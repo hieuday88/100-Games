@@ -109,7 +109,6 @@ public class Piece : MonoBehaviour
                 // Update the step time to prevent double movement
                 stepTime = Time.time + stepDelay;
             }
-            down = false;
         }
 
         // Left/right movement
@@ -158,8 +157,17 @@ public class Piece : MonoBehaviour
         down = true;
     }
 
+    public void OnButtonReleased()
+    {
+        down = false;
+    }
+
     private void Step()
     {
+        if (GameController_4.Instance.isGameOver)
+        {
+            return;
+        }
         stepTime = Time.time + stepDelay;
 
         // Step down to the next row
